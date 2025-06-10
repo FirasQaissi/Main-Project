@@ -33,7 +33,7 @@ function App() {
         <Route
           path="/profile"
           element={
-            <RouteGuard bizOnly={true} adminOnly={false}>
+            <RouteGuard bizOnly={false} adminOnly={false}>
               <Profile />
             </RouteGuard>
           }
