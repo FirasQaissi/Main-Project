@@ -1,0 +1,159 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  overflow-x: hidden;
+  overflow-y: scroll;
+  animation: rotating 4s linear infinite;
+  animation-delay: 1s;
+
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+  text-align: center; 
+}
+
+
+.box::before {
+  content: "";
+  position: absolute;
+ widht: 100%;
+  height: 100%;
+  filter: drop-shadow(0 15px 50px #000);
+  border-radius: 20px;
+  animation: rotating 4s linear infinite;
+  animation-delat:1s;
+}
+
+.box::after {
+  content: "";
+  position: absolute;
+  inset: 4px;
+  background: #2d2d39;
+  
+  border-radius: 15;
+ border:8px solid #25252b;}
+
+ .thebox{
+  background-image:url('../src/imgs/abstract-bluish-paint-background-wallpaper.jpg');
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  animation: rotating 4s linear infinite;
+  animation-delay: 1s;
+  filter: blur(0px);
+  transition: filter 0.5s ease-in-out;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+ }
+
+
+@media (max-width: 768px) {
+  .first1 {
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .first2 {
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left:-10rem;
+  }
+  .first3 {
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .first4 {
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left:-10rem;
+  }
+  .main1{
+    width: 100vw;
+    font-size: 14px;
+    
+  }
+  form{
+    width: 100vw;
+    font-size: 14px;
+    
+  }
+}
+
+.SignInMain{
+  background-image:url('../src/imgs/abstract-bluish-paint-background-wallpaper.jpg');
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  animation: rotating 4s linear infinite;
+  animation-delay: 1s;
+  filter: blur(0px);
+  transition: filter 0.5s ease-in-out;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  
+}
+
+.cardsBox{
+  background-image:url('../src/imgs/pexels-jplenio-1103970.jpg')
+}
+
+.caveat {
+  font-family: "Caveat", cursive;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+.alumni-sans {
+  font-family: "Alumni Sans SC", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
