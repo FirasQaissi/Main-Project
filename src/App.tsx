@@ -33,7 +33,7 @@ function App() {
         <Route
           path="/profile"
           element={
-            <RouteGuard bizOnly={false} adminOnly={false}>
+            <RouteGuard bizOnly={true} adminOnly={false}>
               <Profile />
             </RouteGuard>
           }
@@ -47,7 +47,7 @@ function App() {
 
           }
         />
-        <Route 
+        <Route
           path="/About"
           element={
 
