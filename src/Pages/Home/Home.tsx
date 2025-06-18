@@ -108,7 +108,9 @@ const Home = () => {
                 <img className="size-40 rounded-3xl" src={card.image.url} alt={card.image.alt} />
                 <h2>{card.title}</h2>
                 <h1>{card.subtitle}</h1>
-                <FaPhoneAlt className='m-auto cursor-pointer' />
+                <a href={`tel:${card.phone}`} className="m-auto block w-fit">
+                  <FaPhoneAlt className="cursor-pointer text-2xl text-blue-500 hover:text-blue-800" />
+                </a>
                 <h1>{card.phone}</h1>
 
                 {user && (

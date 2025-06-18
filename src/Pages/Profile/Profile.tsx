@@ -32,7 +32,7 @@ const Profile = () => {
         {"ID: "}{user?._id}
       </h5>
       <h5 className="text-1xl font-bold tracking-tight text-gray-900 dark:text-white">
-        AuthLevel: {user?.isBusiness}</h5>
+        Auth-Level: {user?.isAdmin ? 'Administrator' : user?.isBusiness ? 'Business' : 'Normal'}</h5>
 
 
     </Card>

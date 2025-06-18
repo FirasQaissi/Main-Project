@@ -18,7 +18,6 @@ const useAuth = () => {
                 form,
             );
             localStorage.setItem("token", token.data);
-            console.log(token.data);
             toast.success("Sign In Successful", { position: "top-center" });
             const parsedToken = JSON.parse(atob(token.data.split(".")[1]));
             axios.defaults.headers.common["x-auth-token"] = token.data;
@@ -28,7 +27,7 @@ const useAuth = () => {
                 "https://monkfish-app-z9uza.ondigitalocean.app/bcard2/users/" + parsedToken._id,);
 
             dispatch(userActions.login(res.data));
-            console.log(res.data);
+           
 
         } catch (error) {
             console.log(error);

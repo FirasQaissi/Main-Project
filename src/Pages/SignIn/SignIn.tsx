@@ -36,11 +36,6 @@ function SignIn() {
   const newUser = localStorage.getItem("NewUser");
   const parsedUser = newUser ? JSON.parse(newUser) : null;
 
-  localStorage.setItem('newUser', JSON.stringify(parsedUser));
-
-
-
-
   return (
 
     <>

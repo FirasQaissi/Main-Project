@@ -59,7 +59,6 @@ export default function SignUp({ onClose }: SignUpProps) {
     try {
       const response = await axios.post("https://monkfish-app-z9uza.ondigitalocean.app/bcard2/users", data);
       console.log("Success: אתה מחובר!");
-      console.log("response:", response.data);
       localStorage.setItem('NewUser', JSON.stringify(response.data));
       navigate("/signin");
       if (onClose) {
