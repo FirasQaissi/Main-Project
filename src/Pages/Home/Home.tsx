@@ -97,7 +97,7 @@ const Home = () => {
 
 
         <p className=" text-6xl   text-slate-700 mb-4 pt-5  caveat ">Welcome Home!</p>
-        <h1 className="text-5xl   text-slate-700 mb-5 caveat" >Here you can find business cards from all categories</h1>
+        <h1 className="text-5xl   text-slate-700 mb-5 caveat" >Here you can Register & Create,Edit,find business cards from all categories</h1>
 
         <div style={{ width: '75vw' }} className=" text-2xl  alumni-sans m-auto flex flex-row flex-wrap items-center justify-center  gap-4  dark:bg-gray-800  p-5 rounded-lg shadow-lg">
           {paginatedCards().map((card) => {
